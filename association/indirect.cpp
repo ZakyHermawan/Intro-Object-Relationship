@@ -1,10 +1,6 @@
 #include <string>
 #include <iostream>
 
-class Driver;
-class Car;
-class CarLot;
-
 class Car
 {
 private:

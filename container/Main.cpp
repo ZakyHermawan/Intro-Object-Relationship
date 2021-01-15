@@ -1,6 +1,7 @@
 #include "intarray.h"
 #include <iostream>
 
+
 int main()
 {
   IntArray array(10);
@@ -19,6 +20,12 @@ int main()
   for (int i = 0; i < array.get_length(); ++i) {
     std::cout << array[i] << std::endl;
   }
+
+  IntArray arr{ 5, 4, 3, 2, 1 };
+  for (int i = 0; i < arr.get_length(); ++i) {
+    std::cout << arr[i] << ' ';
+  }
+  std::cout << std::endl;
 
   return 0;
 }

@@ -11,6 +11,16 @@ IntArray::IntArray(int length)
     m_data = new int[length] {};
 }
 
+IntArray::IntArray(std::initializer_list<int> list)
+  : IntArray(static_cast<int>(list.size()))
+{
+  int count{ 0 };
+  for (auto element : list) {
+    m_data[count] = element;
+    ++count;
+  }
+}
+
 IntArray::~IntArray() {
   if (m_data != nullptr)
     delete[] m_data;

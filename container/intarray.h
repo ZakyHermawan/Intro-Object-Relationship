@@ -1,4 +1,5 @@
 #pragma once
+#include <initializer_list>
 
 class IntArray
 {
@@ -8,8 +9,8 @@ private:
 
 public:
   IntArray() = default;
-
   IntArray(int length);
+  IntArray(std::initializer_list<int> list);
 
   ~IntArray();
 
